@@ -3,7 +3,13 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('Главная страница')
+    return HttpResponse(
+        'Главная страница'
+    )
+
+
+def group_list(request):
+    return HttpResponse('Список групп')
 
 
 # В урл мы ждем парметр, и нужно его прередать в функцию для использования
